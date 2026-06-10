@@ -4,53 +4,47 @@
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![OpenWeather](https://img.shields.io/badge/OpenWeather-API-orange?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Responsive-Design-success?style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![OpenWeather API](https://img.shields.io/badge/OpenWeather-API-orange?style=for-the-badge)
 
 </div>
 
-A modern weather dashboard built with React and OpenWeather API. The application provides real-time weather information, hourly forecasts, weekly forecasts, and air condition details with a clean responsive UI.
+## Overview
 
----
+Weather Dashboard is a responsive weather application built with React and Vite. The application fetches real-time weather information from the OpenWeather API and presents current weather conditions, hourly forecasts, weekly forecasts, and air condition details through a clean and modern user interface.
 
 ## Features
 
-* Real-time weather data
+* Search weather by city name
+* Real-time weather information
+* Current temperature and weather conditions
+* Hourly forecast
+* Weekly forecast
+* Air condition details
 * Dynamic weather icons
-* Hourly forecast section
-* Weekly forecast section
-* Air conditions display
-* Responsive dashboard layout
-* Search weather by city
-* Modern dark UI design
+* Responsive design
+* Modern dashboard UI
 
----
+## Technologies Used
 
-## Tech Stack
-
-| Technology      | Usage                   |
-| --------------- | ----------------------- |
-| React           | Frontend Library        |
-| Vite            | Development Environment |
-| CSS3            | Styling                 |
-| React Icons     | Weather Icons           |
-| OpenWeather API | Weather Data            |
-
----
+* React
+* Vite
+* CSS3
+* React Icons
+* OpenWeather API
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-dashboard.git
+git clone https://github.com/Htut-7/Weather_Dashboard.git
 ```
 
-Navigate to the project folder:
+Navigate to the project directory:
 
 ```bash
-cd weather-dashboard
+cd Weather_Dashboard
 ```
 
 Install dependencies:
@@ -59,29 +53,30 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
----
-
 ## Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the project root:
 
 ```env
-VITE_API_KEY=your_api_key
+VITE_API_KEY=your_openweather_api_key
 ```
 
----
+Update the API key in `App.jsx`:
+
+```javascript
+const API_KEY = import.meta.env.VITE_API_KEY;
+```
 
 ## Project Structure
 
 ```bash
 src/
-│
 ├── components/
 │   ├── Sidebar.jsx
 │   ├── SearchBar.jsx
@@ -90,40 +85,34 @@ src/
 │   ├── WeeklyForecast.jsx
 │   └── Airconditions.jsx
 │
-├── css/
-│
 ├── App.jsx
+├── App.css
 └── main.jsx
 ```
 
----
+## Learning Outcomes
 
-## API
+This project helped strengthen skills in:
 
-This project uses the OpenWeather API for:
-
-* Current weather data
-* Hourly forecast
-* Weekly forecast
-
-Official API Documentation:
-
-https://openweathermap.org/api
-
----
+* Building reusable React components
+* Managing state with React Hooks
+* Fetching and handling external API data
+* Working with asynchronous JavaScript
+* Creating responsive layouts with CSS
+* Displaying dynamic data in a user-friendly interface
 
 ## Future Improvements
 
-* Loading states
-* Error handling
 * Geolocation support
 * Search history
-* Dynamic backgrounds
-* Theme switcher
-* Weather animations
+* Loading states and skeleton loaders
+* Enhanced error handling
+* Dark and light mode toggle
+* Dynamic weather backgrounds
+* Weather alerts and notifications
 
----
+## Author
 
-## License
+**Sithu Htut**
 
-This project is licensed under the MIT License.
+GitHub: https://github.com/Htut-7
