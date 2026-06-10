@@ -12,7 +12,7 @@ function App() {
   let [weather,setWeather]=useState(null);
   let [forecast,setForecast]=useState([])
 
-  const API_KEY='54783f9e9e1251a657a2adb6115f13a6'
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const getWeather=async(city)=>{
     try{
