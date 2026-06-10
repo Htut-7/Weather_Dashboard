@@ -11,19 +11,19 @@
 
 ## Overview
 
-Weather Dashboard is a responsive weather application built with React and Vite. The application fetches real-time weather information from the OpenWeather API and presents current weather conditions, hourly forecasts, weekly forecasts, and air condition details through a clean and modern user interface.
+Weather Dashboard is a modern and responsive weather application built with React and Vite. The application uses the OpenWeather API to provide real-time weather information, including current weather conditions, hourly forecasts, weekly forecasts, and air condition details for cities worldwide.
 
 ## Features
 
 * Search weather by city name
 * Real-time weather information
 * Current temperature and weather conditions
-* Hourly forecast
-* Weekly forecast
+* Hourly weather forecast
+* Weekly weather forecast
 * Air condition details
 * Dynamic weather icons
-* Responsive design
-* Modern dashboard UI
+* Responsive design for desktop and mobile devices
+* Clean and modern user interface
 
 ## Technologies Used
 
@@ -61,17 +61,15 @@ npm run dev
 
 ## Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root and add your OpenWeather API key:
 
 ```env
 VITE_API_KEY=your_openweather_api_key
 ```
 
-Update the API key in `App.jsx`:
+You can obtain a free API key from:
 
-```javascript
-const API_KEY = import.meta.env.VITE_API_KEY;
-```
+https://openweathermap.org/api
 
 ## Project Structure
 
@@ -96,10 +94,10 @@ This project helped strengthen skills in:
 
 * Building reusable React components
 * Managing state with React Hooks
-* Fetching and handling external API data
-* Working with asynchronous JavaScript
-* Creating responsive layouts with CSS
-* Displaying dynamic data in a user-friendly interface
+* Working with external APIs
+* Handling asynchronous data fetching
+* Creating responsive user interfaces
+* Displaying dynamic data effectively
 
 ## Future Improvements
 
